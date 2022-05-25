@@ -44,10 +44,10 @@ $dept = $row['s_department']
 				<li><?php echo '<img src="data:image;base64,'.base64_encode($row['s_profilephoto']).'" alt="Avatar" class="avatar">'; ?></li>
 				<li><a href="#"> Welcome <?php echo($_SESSION['usrname']); ?>  <i class="fas fa-caret-down"></i></a>
 					<ul>
-						<li><a href="staff.php">Profile</a></li>
-						<li><a href="apply_leave_staff.php">Apply Leave</a></li>
-						<li><a href="leave_status_staff.php">Leave Status</a></li>
-						<li><a href="approve_leave.php">Approve leave</a></li>
+					<li><a href="staff.php">Profile</a></li>
+						<li><a href="apply_leave_staff.php">Add Scholarship</a></li>
+						<!-- <li><a href="leave_status_staff.php">Update Status</a></li> -->
+						<li><a href="approve_leave.php">Approve</a></li>
 						<li><a href="logout.php">Logout</a></li>
 					</ul>
 				</li>
