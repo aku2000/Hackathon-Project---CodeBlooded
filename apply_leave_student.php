@@ -57,10 +57,10 @@ $dept = $row['department']
 		<div class="title">Leave Application</div><br>
 	  	<form action=" " method="POST">
 			<div class="input_field">
-				<label>First Name</label>
+				<label>Scholarship Name</label>
 				<input type="text" name="fname" class="input" required="*">
-		    	<label>Last Name</label>
-				<input type="text" name="lname" class="input" required="*">
+		    	<!-- <label>Last Name</label>
+				<input type="text" name="lname" class="input" required="*"> -->
 			</div>
 			<div class="input_field">
 				<label>Country Code</label>

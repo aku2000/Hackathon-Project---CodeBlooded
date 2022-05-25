@@ -15,13 +15,13 @@
 	</label>
 	<nav class="sidebar">
 		<div>
-			<img class="logo" src="logo.jpeg">
+			<img class="logo" src="logo.png">
 			<ul>
 				<li><a href="index.php">Home</a></li>
 				<li><a href="#">Login <i class="fas fa-caret-down"></i></a>
 					<ul>
 						<li><a href="adminlogin.php">Admin login</a></li>
-						<li><a href="stafflogin.php">Staff login</a></li>
+						<li><a href="stafflogin.php">University login</a></li>
 						<li><a href="studentlogin.php">Student login</a></li>
 					</ul>
 				</li>
@@ -30,11 +30,11 @@
 		</div>
 	</nav>
 	<div class="header">
-		<h1>CMRIT
+		<h1>SCHOVERSITY
 			<div id="div1">
 				<a href="Tel://918028524456">Tel : +91 80 28524466 / 77</a>
 				<br>
-				<a href="mailto:info@cmrit.ac.in">Email : info@cmrit.ac.in</a>
+				<a href="mailto:Akansha.Agarwal@ellucian.com">Email : Akansha.Agarwal@ellucian.com</a>
 			</div>
 		</h1>
 	</div>
@@ -44,7 +44,7 @@
 
   		<!-- Full-width images with number and caption text -->
   		<div class="mySlides fade">
-    		<img src="home.png" style="width:100%">
+    		<img src="logo.png" style="width:100%">
   		</div>
 
   		<div class="mySlides fade">
@@ -103,7 +103,7 @@
 	<section>
 		<div class="col" id="div2">
 			<div class="content active">
-				<img src="https://www.cmrit.ac.in/wp-content/uploads/sites/2/2013/12/icon_cmrit.png" width="61" height="61" alt="" class="icon">
+				<img src="ellucian.png" width="61" height="61" alt="" class="icon">
 				<h3> WHY CMRIT?</h3>
 				<p> CMRIT is accredited with A+ by the NAAC</p>
 				<p><em><a href="https://www.cmrit.ac.in/about-cmrit/">read more &gt;</a></em></p><br><br><br><br>
