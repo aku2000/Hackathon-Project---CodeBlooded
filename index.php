@@ -44,18 +44,18 @@
 
   		<!-- Full-width images with number and caption text -->
   		<div class="mySlides fade">
-    		<img src="logo.png" style="width:100%">
+    		<img src="image1.png" style="width:100%">
   		</div>
 
   		<div class="mySlides fade">
-  			<img src="image2.jpg" style="width:100%">
+  			<img src="image2.png" style="width:100%">
   		</div>
 
   		<div class="mySlides fade">
-    		<img src="image3.jpg" style="width:100%">
+    		<img src="image3.png" style="width:100%">
   		</div>
   		<div class="mySlides fade">
-    		<img src="banner.jpg" style="width:100%">
+    		<img src="image4.png" style="width:100%">
   		</div>
 
   		<!-- Next and previous buttons -->
@@ -104,9 +104,11 @@
 		<div class="col" id="div2">
 			<div class="content active">
 				<img src="ellucian.png" width="61" height="61" alt="" class="icon">
-				<h3> WHY CMRIT?</h3>
-				<p> CMRIT is accredited with A+ by the NAAC</p>
-				<p><em><a href="https://www.cmrit.ac.in/about-cmrit/">read more &gt;</a></em></p><br><br><br><br>
+				<h3> WHY SCHOVERSITY?</h3>
+				<p> It is a common portal associated with ellucian containing various scholarship schemes from different universities all over the world.It aims to create a transparent database of scholars and harmonise different scholarships schemes and norms.
+
+</p>
+				<p><em><a href="https://www.ellucian.com/">read more &gt;</a></em></p><br><br><br><br>
 			</div>
 		</div>
 
@@ -115,9 +117,12 @@
 				<img src="https://www.cmrit.ac.in/wp-content/uploads/sites/2/2013/12/icon_announcement.png" width="61" height="61" alt="" class="icon">
 				<div class="content">
 					<h3>ANNOUNCEMENT</h3>
-					<p><em><a style="text-decoration: underline;" href="https://www.cmrit.ac.in/wp-content/uploads/sites/2/2020/01/NIRF_2020.pdf">NIRF 2020 </a></em></p>
-					<p>CET Mock Examination Papers available!</p>
-					<p><em><a href="https://www.cmrit.ac.in/admissions/undergraduate/" target="_blank" rel="noopener noreferrer">click here &gt;</a></em></p><br><br>	
+					<!-- <p><em><a style="text-decoration: underline;" href="https://www.ellucian.com/news/ellucian-foundation-announces-2022-path-scholarship-program">click here </a></em></p> -->
+					<p>One week left to apply for the NetDocuments Work Inspired Scholarship! Minority students who plan to enroll in full-time undergrad study next year can earn up to $10,000. Applications are due 5/31 – don’t miss out! Apply now
+</p>
+					<p><em><a style="text-decoration: underline;" href="https://www.ellucian.com/news/ellucian-foundation-announces-2022-path-scholarship-program">click here </a></em></p>
+					<
+					<!-- <p><em><a href="https://www.cmrit.ac.in/admissions/undergraduate/" target="_blank" rel="noopener noreferrer">click here &gt;</a></em></p><br><br>	 -->
 				</div>
 			</div>
 		</div>
@@ -126,8 +131,10 @@
 			<div class="content active">
 				<img src="https://www.cmrit.ac.in/wp-content/uploads/sites/2/2013/12/icon_twitter.png" width="61" height="61" alt="" class="icon">
 				<h3>TWEETS</h3>
-				<p>A teacher is like a potter who constantly guides and moulds the students who are the clay.Wishing all the teacher…<a href="https://twitter.com/CMRIT_Bengaluru/status/1302132088619937792" target="_blank">https://t.co/jGfvBzKZ25</a></p>
-				<div class="tweet-info"><a href="http://twitter.com/CMRIT_Bengaluru" target="_blank">@CMRIT_Bengaluru</a>  |  6 hours ago</div><br><br>
+				<p>Quantity and persistence will get you the outcomes you need.
+</a></p>
+				<div class="tweet-info"><a href="https://twitter.com/ellucianinc/" target="_blank">@EllucianInc
+</a>  |  6 hours ago</div><br><br>
 			</div>					
 		</div>
 	</section>

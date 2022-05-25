@@ -32,15 +32,16 @@
 		</div>
 	</nav>
 	<section>
-		<img id="image" src="image2.jpg">
+		<img id="image" src="logosch.png">
 		<div>
-			<p id="intro">CMRIT is not just a college. It’s a community of pro-active students with ambitious dreams. A dream of a bright future. A dream of a successful life. And we, at CMRIT, provide our students with all the necessary tools and guidance to convert these dreams into actions.</p>
+			<p id="intro">SchoVersity Scholarships Portal is one-stop solution through which various services starting from student application, classification of scholarship, processing of various scholarships are enabled. SchoVersity Scholarships Portal is taken as Mission Mode Project under Ellucian Service.
+</p>
 		</div>
 
 		<div id="div1">
 			<p>
 				<h3>Vision :</h3>
-				To be a nationally acclaimed and globally recognised institute of engineering, technology and management, producing competent professionals with appropriate attributes to serve the cause of the nation and of society at large.
+				This initiative aims at providing a Simplified, Mission-oriented, Accountable, Responsive & Transparent 'SMART' System for faster & effective disposal of Scholarships applications.
 			</p>
 		</div>
 
@@ -48,12 +49,9 @@
 			<p>
 				<h3>Accreditation, Approvals and Recognition :</h3>
 				<ul>
-					<li>Affiliated to Visvesvaraya Technological University</li>
-					<li>Approved by AICTE, New Delhi</li>
-					<li>Recognised by Government of Karnataka</li>
-					<li>Accredited by NBA (CSE, ECE, EEE)</li>
-					<li>Accredited by NBA (CV, ISE, ME)</li>
-					<li>Accredited by NAAC with A+ (Certificate)</li>
+					<li>$350M+ In ROI across customer institutions</li>
+					<li>145+ Managed services customers</li>
+					<li>Top 100 In IAOP for the sixth year in a row</li>
 				</ul>
 			</p><br>
 		</div>
@@ -61,19 +59,19 @@
 		<div id="div3">
 			<p>
 				<h3>Our Location :</h3>
-				CMR Institute of Technology
-				<br>AECS Layout
-				<br>ITPL Main Road,Kundalahalli	
-				<br>Bangalore 560037 , India
-				<br><a href="tel://918028524466" id="a1">Tel: +91 80 28524466 / 77</a>
-				<br><a href="mailto:info@cmrit.ac.in" id="a1">Email: info@cmrit.ac.in</a><br>
+				Ellucian Corporate Headquarters
+				<br>2003 Edmund Halley Drive Reston
+				<br>VA 20191
+				<br><a href="tel://US +1 703-968-9000
+" id="a1">Tel: +91 80 28524466 / 77</a>
+				<br><a href="mailto:info@cmrit.ac.in" id="a1">Fax:+1 703-968-4625 </a><br>
 			</p>
 		</div>
 
 		<div id="div4">
-			<a href="https://www.facebook.com/CMRInstituteOfTechnologyBangalore/"><i class="fab fa-facebook-square"></i></a> FaceBook<br>
-			<a href="https://twitter.com/CMRIT_Bengaluru"><i class="fab fa-twitter-square" ></i></a>  Twitter<br>
-			<a href="https://www.youtube.com/channel/UCpi96paEf16WS-Xf0_xyL9Q"><i class="fab fa-youtube"></i></a> Youtube<br><br>
+			<a href="https://www.facebook.com/EllucianInc/"><i class="fab fa-facebook-square"></i></a> FaceBook<br>
+			<a href="https://twitter.com/ellucianinc/"><i class="fab fa-twitter-square" ></i></a>  Twitter<br>
+			<a href="https://www.youtube.com/user/ellucianinc"><i class="fab fa-youtube"></i></a> Youtube<br><br>
 		</div>
 	</section>
 </body>
