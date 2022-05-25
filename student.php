@@ -45,8 +45,8 @@ $row = mysqli_fetch_assoc($result);
 				<li><a href="#">Welcome <?php echo($_SESSION['usrname']); ?>  <i class="fas fa-caret-down"></i></a>
 					<ul>
 						<li><a href="student.php">Profile</a></li>
-						<li><a href="apply_leave_student.php">Apply Leave</a></li>
-						<li><a href="leave_status_student.php">Leave Status</a></li>
+						<li><a href="apply_leave_student.php">Apply Scholarship</a></li>
+						<li><a href="leave_status_student.php">Scholarship Status</a></li>
 						<li><a href="logout.php">Logout</a></li>
 					</ul>
 				</li>
