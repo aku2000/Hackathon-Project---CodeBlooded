@@ -15,7 +15,7 @@
 	</label>
 	<nav class="sidebar">
 		<div>
-			<img class="logo" src="logo.png">
+			<!-- <img class="logo" src="logosch.png"> -->
 			<ul>
 				<li><a href="index.php">Home</a></li>
 				<li><a href="#">Login <i class="fas fa-caret-down"></i></a>

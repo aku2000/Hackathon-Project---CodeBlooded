@@ -34,13 +34,13 @@ else
     </label>
     <nav class="sidebar">
       	<div>
-        	<img class="logo" src="logo.jpeg">
+        	<!-- <img class="logo" src="logo.jpeg"> -->
         	<ul>
           		<li><a href="index.php">Home</a></li>
           		<li><a href="#">Login<i class="fas fa-caret-down"></i></a>
             		<ul>
               		<li><a href="adminlogin.php">Admin login</a></li>
-              		<li><a href="stafflogin.php">Staff login</a></li>
+              		<li><a href="stafflogin.php">University login</a></li>
               		<li><a href="studentlogin.php">Student login</a></li>
                 </ul>
           		</li>

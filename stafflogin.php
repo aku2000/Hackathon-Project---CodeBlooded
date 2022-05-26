@@ -18,13 +18,13 @@ session_start();
     </label>
     <nav class="sidebar">
       <div>
-        <img class="logo" src="logo.jpeg">
+        <img class="logo" src="logosch.png">
         <ul>
           <li><a href="index.php">Home</a></li>
           <li><a href="#">Login <i class="fas fa-caret-down"></i></a>
             <ul>
               <li><a href="adminlogin.php">Admin login</a></li>
-              <li><a href="stafflogin.php">Staff login</a></li>
+              <li><a href="stafflogin.php">University login</a></li>
               <li><a href="studentlogin.php">Student login</a></li>
             </ul>
           </li>
@@ -33,7 +33,7 @@ session_start();
       </div>
     </nav>
     <div class="wrapper">
-      <div class="title">Staff Login</div>
+      <div class="title">University Login</div>
       <form action=" " method="POST">
         <div class="field">
             <input type="text" id="user" name="user" required>

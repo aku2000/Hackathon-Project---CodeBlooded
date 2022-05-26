@@ -12,7 +12,7 @@ $dept = $row['department']
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Leave Application</title>
+	<title>Scholarship Application</title>
 	<link rel="stylesheet" href="apply_leave.css">
 	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 </head>
@@ -24,13 +24,13 @@ $dept = $row['department']
     </label>
     <nav class="sidebar">
       	<div>
-        	<img class="logo" src="logo.jpeg">
+        	<!-- <img class="logo" src="logo.jpeg"> -->
         	<ul>
           		<li><a href="index.php">Home</a></li>
           		<li><a href="#">Login<i class="fas fa-caret-down"></i></a>
             		<ul>
               			<li><a href="adminlogin.php">Admin login</a></li>
-              			<li><a href="stafflogin.php">Staff login</a></li>
+              			<li><a href="stafflogin.php">University login</a></li>
               			<li><a href="studentlogin.php">Student login</a></li>
 					</ul>
           		</li>
@@ -54,7 +54,7 @@ $dept = $row['department']
 		</div>	
 	</div>
 	<div class="wrapper">
-		<div class="title">Leave Application</div><br>
+		<div class="title">Scholarship Application</div><br>
 	  	<form action=" " method="POST">
 			<div class="input_field">
 				<label>Scholarship Name</label>
