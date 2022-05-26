@@ -4,7 +4,7 @@ session_start();
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-  <title>Manage Staff</title>
+  <title>Manage University</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="admin.css">
@@ -39,7 +39,11 @@ session_start();
         <li><img src="default.png" alt="Avatar" class="avatar"></li>
         <li><a href="admin.php"> Welcome <?php echo($_SESSION['usrname']); ?>  <i class="fas fa-caret-down"></i></a>
           <ul>
+<<<<<<< HEAD
+            <li><a href="add_staff.php">Add University</a></li>
+=======
            <li><a href="add_staff.php">Add University</a></li>
+>>>>>>> da986b1eb383de2023a15e8856147dafbebfff61
 						<li><a href="add_student.php">Add Student</a></li>
 						<li><a href="manage_staff.php">Manage University</a></li>
 						<li><a href="manage_student.php">Manage Student</a></li>
@@ -49,18 +53,18 @@ session_start();
       </ul>
     </div>  
   </div>
-  <h1 style="text-align: center;">Staff Details</h1>
+  <h1 style="text-align: center;">University Details</h1>
   <div class="container">
       <br>       
       <table>
         <thead>
           <tr>
             <th>ID</th>
-            <th>Firstname</th>
-            <th>Lastname</th>
+            <th>UniversityName</th>
+            <th>Website</th>
             <th>Email</th>
             <th>Phone Number</th>
-            <th>Dept</th>
+            <th>Location</th>
             <th>View</th>
             <th>Update</th>
             <th>Delete</th>
@@ -77,11 +81,11 @@ session_start();
             $s_id=$row['s_id'];
             echo '<tr>' ;
             echo '<td>' . $row['s_id'] . '</td>' ;
-            echo '<td>' . $row['s_firstname'] . '</td>' ;
-            echo '<td>' . $row['s_lastname'] . '</td>' ;
+            echo '<td>' . $row['s_name'] . '</td>' ;
+            echo '<td>' . $row['s_website'] . '</td>' ;
             echo '<td>' . $row['s_email'] . '</td>' ;
             echo '<td>' . $row['s_phno'] . '</td>' ;
-            echo '<td>' . $row['s_department'] . '</td>' ;
+            echo '<td>' . $row['s_location'] . '</td>' ;
             echo "<td><a href='view_staff.php?s_id=$s_id' ><button type='button' class='btn btn-info' style='background: yellow;'>View</button></td>";
             echo "<td><a href='update_staff.php?s_id=$s_id'><button type='button' class='btn btn-warning' style='background: aqua;'>Update</button></a></td>";
             echo "<td><a href='delete_staff.php?s_id=$s_id'><button type='button' class='btn btn-danger' style='background: lightcoral;'>Delete</button></a></td>";
