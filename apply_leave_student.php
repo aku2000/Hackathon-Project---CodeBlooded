@@ -58,9 +58,14 @@ $dept = $row['department']
 	  	<form action=" " method="POST">
 			<div class="input_field">
 				<label>Scholarship Name</label>
+				<input type="text" name="sname" class="input" required="*">
+		    	
+			</div>
+			<div class="input_field">
+				<label>First Name</label>
 				<input type="text" name="fname" class="input" required="*">
-		    	<!-- <label>Last Name</label>
-				<input type="text" name="lname" class="input" required="*"> -->
+				<label>Last Name</label>
+				<input type="text" name="lname" class="input" required="*">
 			</div>
 			<div class="input_field">
 				<label>Nationality</label>
@@ -81,9 +86,11 @@ $dept = $row['department']
 		    	<label>Specially abled</label>
 				<div class="custom_select" style="margin-left:60px">
 					<select name="category">
-						<option>Select</option>
-						<option >Yes</option>
-						<option>No</option>
+						
+						<option value=" ">Select</option>
+						<option value="Yes">Yes</option>
+						<option value="No">No</option>
+					
 						
 					</select>
 				</div>
@@ -92,9 +99,10 @@ $dept = $row['department']
 				<label>Category</label>
 				<div class="custom_select" style="margin-left:60px">
 					<select name="category1">
-						<option>Select</option>
-						<option >Annually</option>
-						<option >Course based</option>
+					
+						<option value=" ">Select</option>
+						<option value="Annually">Annually</option>
+						<option value="Course based">Course based</option>
 						
 					</select>
 				</div>
@@ -130,7 +138,7 @@ $dept = $row['department']
 	if(isset($_POST['submit']))
 	{
 		$id= $_SESSION['id'];
-		
+		$sname = $_POST['sname'];
 		$fname = $_POST['fname'];
 		$lname = $_POST['lname'];
 		$countrycode = $_POST['countrycode'];
@@ -143,7 +151,7 @@ $dept = $row['department']
 		$income = $_POST['income'];
 	
 
-   		$query = "INSERT INTO `apply_scholarship_student`(`id`,`first_name`,`last_name`,`country_code`,`phno`,`age`,`category`,`specially_abled`,`score`,`income`) VALUES('$id','$fname','$lname','$countrycode','$phno','$age','$category','$category1','$score','$income')";
+   		$query = "INSERT INTO `apply_scholarship_student`(`id`,`scholarship_name`,`first_name`,`last_name`,`country_code`,`phno`,`age`,`course`,`category`,`specially_abled`,`score`,`income`) VALUES('$id','$sname','$fname','$lname','$countrycode','$phno','$age','$course','$category','$category1','$score','$income')";
     	$sql = mysqli_query($con,$query);
 
     	if($sql){

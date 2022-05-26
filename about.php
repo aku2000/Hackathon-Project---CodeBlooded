@@ -27,7 +27,7 @@
 						<li><a href="studentlogin.php">Student login</a></li>
 					</ul>
 				</li>
-				<li><a href="about.php">About</a></li>
+				<li><a href="upload_file.php">About</a></li>
 			</ul>
 		</div>
 	</nav>
