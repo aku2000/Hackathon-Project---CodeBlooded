@@ -24,7 +24,7 @@ $dept = $row['department']
     </label>
     <nav class="sidebar">
       	<div>
-        	<img class="logo" src="logo.jpeg">
+        	<!-- <img class="logo" src="logo.jpeg"> -->
         	<ul>
           		<li><a href="index.php">Home</a></li>
           		<li><a href="#">Login<i class="fas fa-caret-down"></i></a>
@@ -75,9 +75,14 @@ $dept = $row['department']
 			</div>
 			
 			<div class="input_field">
+<<<<<<< HEAD
 				<label >Age</label>
 				<input type="number" name="age" class="input" required="*"  value="<?php echo $age;?>">	
 
+=======
+				<label>Age</label>
+				<input type="number" name="age" class="input" required="*">				
+>>>>>>> 71d58ef6d37d40b81ad1c85d1c5f2dafa011ee9e
 			</div>
 			<div class="input_field">
 				<label>Course name</label>
@@ -87,20 +92,17 @@ $dept = $row['department']
 		    	<label>Specially abled</label>
 				<div class="custom_select" style="margin-left:60px">
 					<select name="category">
-						
 						<option value=" ">Select</option>
 						<option value="Yes">Yes</option>
-						<option value="No">No</option>
-					
-						
+						<option value="No">No</option>	
 					</select>
 				</div>
 			</div>
+           
 			<div class="input_field">
 				<label>Category</label>
 				<div class="custom_select" style="margin-left:60px">
 					<select name="category1">
-					
 						<option value=" ">Select</option>
 						<option value="Annually">Annually</option>
 						<option value="Course based">Course based</option>

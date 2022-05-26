@@ -6,7 +6,7 @@ $sql = "SELECT * FROM `student` WHERE id=$id";
 $result = mysqli_query($con,$sql);
 $row = mysqli_fetch_assoc($result);
 
-$query="SELECT reason,start_date,end_date,status FROM `apply_leave_student` WHERE id=$id";
+$query="SELECT scholarship_name,status FROM `apply_scholarship_student` WHERE id=$id";
 $resultquery = mysqli_query($con,$query);
 if(mysqli_num_rows($resultquery) > 0){
 }
@@ -34,13 +34,13 @@ else
     </label>
     <nav class="sidebar">
       	<div>
-        	<img class="logo" src="logo.jpeg">
+        	<!-- <img class="logo" src="logo.jpeg"> -->
         	<ul>
           		<li><a href="index.php">Home</a></li>
           		<li><a href="#">Login<i class="fas fa-caret-down"></i></a>
             		<ul>
               		<li><a href="adminlogin.php">Admin login</a></li>
-              		<li><a href="stafflogin.php">Staff login</a></li>
+              		<li><a href="stafflogin.php">University login</a></li>
               		<li><a href="studentlogin.php">Student login</a></li>
                 </ul>
           		</li>
@@ -65,14 +65,13 @@ else
     </div>
     <br><br>
     <br>
-    <h1 style="text-align: center;">Leave Status</h1>
+    <h1 style="text-align: center;">Scholarship Status</h1>
     <div class="container">
       <table>
         <tr>
           <thead>
-            <th>Leave type</th>
-            <th>Starting date</th>
-            <th>Ending date </th>
+            <th>Scholarship name</th>
+            
             <th>Status</th>
             <th>Delete</th>
           </tr>
@@ -82,9 +81,8 @@ else
 							while($row = mysqli_fetch_assoc($resultquery))
               {
                 echo '<tr>' ;
-                echo '<td>' . $row['reason'] . '</td>' ;
-                echo '<td>' . $row['start_date'] . '</td>' ;
-                echo '<td>' . $row['end_date'] . '</td>' ;
+                echo '<td>' . $row['scholarship_name'] . '</td>' ;
+                
                 echo '<td>' . $row['status'] . '</td>' ;
                 echo "<td><a href='delete_leave_student.php?id=$id'><button type='button' class='btn btn-danger' style='background: lightcoral;'>Delete</button></a></td>";
                 echo '<tr>' ;
