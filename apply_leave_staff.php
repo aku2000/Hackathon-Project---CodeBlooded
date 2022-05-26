@@ -5,7 +5,7 @@ include 'connection.php';
 $sql = "SELECT * FROM `staff` WHERE s_id=$s_id";
 $result = mysqli_query($con,$sql);
 $row = mysqli_fetch_assoc($result);
-$dept = $row['s_department']
+//$dept = $row['s_department']
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -74,9 +74,9 @@ $dept = $row['s_department']
 				<div class="custom_select">
 					<select name="category">
 						<option value=" ">Select</option>
-						<option value="Student">Student</option>
-						<option value="Faculty">Faculty</option>
-						<option value="Others">Others</option>
+						<option value="Annually">Annually</option>
+						<option value="Course based">Course based</option>
+						
 					</select>
 				</div>
 			</div>
@@ -144,7 +144,7 @@ $dept = $row['s_department']
     	$sql = mysqli_query($con,$query);
 
     	if($sql){
-    		echo "<h2>Applied successfully</h2>";
+    		echo "<h2 style='margin-left:650px'>Applied successfully</h2>";
     	}
     	else{
     		echo "<h2>Error occurred while applying</h2>";

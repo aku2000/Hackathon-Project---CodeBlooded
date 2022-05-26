@@ -80,19 +80,19 @@ $row = mysqli_fetch_assoc($result);
 			<div class="main-container">
 			<div class="field">
 				<label><i class="fa fa-user info"></i>University Name</label>
-				<input type="text" class="input" id="fname" disabled  value="<?php echo  $s_firstname ;?>"  name="fname" required="*">
+				<input type="text" class="input" style="margin-left:60px" id="fname" disabled  value="<?php echo  $s_firstname ;?>"  name="fname" required="*">
 			</div>
 			<div class="field">
 				<label><i class="fa fa-phone info"></i>Mobile no.</label>
-				<input type="number" class="input" id="phno" disabled  value="<?php echo  $s_phno ;?>" name="phno" required="*">
+				<input type="number" class="input" style="margin-left:60px" id="phno" disabled  value="<?php echo  $s_phno ;?>" name="phno" required="*">
 			</div>
 			<div class="field">
 		    	<label><i class="fa fa-envelope info"></i>Website</label>
-				<input type="text" class="input" id="email" disabled value="<?php echo $s_email ;?>" name="email" required="*">
+				<input type="text" class="input" style="margin-left:60px" id="email" disabled value="<?php echo $s_email ;?>" name="email" required="*">
 			</div>
 			<div class="field">
 		    	<label><i class="fa fa-book info"></i>Location</label>
-				<input type="text" class="input" id="dept" disabled  value="<?php echo $s_department ;?>"  name="dept" required="*">
+				<input type="text" class="input" style="margin-left:60px" id="dept" disabled  value="<?php echo $s_department ;?>"  name="dept" required="*">
 			</div>
 			<!-- <div class="field">
 				<label><i class="fa fa-calendar info"></i>Year Joined</label>
