@@ -38,9 +38,9 @@ session_start();
 				<li><img src="default.png" alt="Avatar" class="avatar"></li>
 				<li><a href="admin.php"> Welcome <?php echo($_SESSION['usrname']); ?>  <i class="fas fa-caret-down"></i></a>
 					<ul>
-						<li><a href="add_staff.php">Add Staff</a></li>
+						<li><a href="add_staff.php">Add University</a></li>
 						<li><a href="add_student.php">Add Student</a></li>
-						<li><a href="manage_staff.php">Manage Staff</a></li>
+						<li><a href="manage_staff.php">Manage University</a></li>
 						<li><a href="manage_student.php">Manage Student</a></li>
 						<li><a href="logout.php">Logout</a></li>
 					</ul>

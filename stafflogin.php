@@ -6,7 +6,7 @@ session_start();
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Staff Login Page</title>
+    <title>University Login Page</title>
     <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
   </head>
@@ -33,7 +33,7 @@ session_start();
       </div>
     </nav>
     <div class="wrapper">
-      <div class="title">Staff Login</div>
+      <div class="title">University Login</div>
       <form action=" " method="POST">
         <div class="field">
             <input type="text" id="user" name="user" required>

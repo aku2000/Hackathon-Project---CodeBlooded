@@ -38,9 +38,9 @@ session_start();
 				<li><img src="default.png" alt="Avatar" class="avatar"></li>
 				<li><a href="admin.php"> Welcome <?php echo($_SESSION['usrname']); ?>  <i class="fas fa-caret-down"></i></a>
 					<ul>
-						<li><a href="add_staff.php">Add Staff</a></li>
+				    	<li><a href="add_staff.php">Add University</a></li>
 						<li><a href="add_student.php">Add Student</a></li>
-						<li><a href="manage_staff.php">Manage Staff</a></li>
+						<li><a href="manage_staff.php">Manage University</a></li>
 						<li><a href="manage_student.php">Manage Student</a></li>
 						<li><a href="logout.php">Logout</a></li>
 					</ul>
@@ -56,11 +56,11 @@ session_start();
     $sql = "select * from staff where s_id=$s_id";
     $result = mysqli_query($con,$sql);
     $row = mysqli_fetch_assoc($result);
-    $s_firstname = $row['s_firstname'];
-    $s_lastname = $row['s_lastname'];
+    $s_firstname = $row['s_name'];
+    $s_lastname = $row['s_website'];
     $s_phno = $row['s_phno'];
     $s_email = $row['s_email'];
-    $s_department = $row['s_department'];
+    $s_department = $row['s_location'];
     $s_yearjoined = $row['s_yearjoined'];
     $s_pswd = $row['s_pswd'];
 
@@ -71,11 +71,11 @@ session_start();
 	  	<form action=" " method="POST">
 	  		<input type="hidden" name="s_id" value="<?php echo  $s_id ;?>" >
 			<div class="field">
-				<label>First Name</label>
+				<label>University Name</label>
 				<input type="text" class="input" id="fname"   value="<?php echo  $s_firstname ;?>"  name="fname" required="*">
 			</div>
 			<div class="field">
-		    	<label>Last Name</label>
+		    	<label>Website</label>
 				<input type="text" class="input" id="lname"  value="<?php echo  $s_lastname ;?>" name="lname" required="*">
 			</div>
 			<div class="field">
@@ -87,7 +87,7 @@ session_start();
 				<input type="text" class="input" id="email"  value="<?php echo $s_email ;?>" name="email" required="*">
 			</div>
 			<div class="field">
-		    	<label>Department</label>
+		    	<label>Location</label>
 				<input type="text" class="input" id="dept"   value="<?php echo $s_department ;?>"  name="dept" required="*">
 			</div>
 			<div class="field">
@@ -120,7 +120,7 @@ if(isset($_POST['submit']))
     $s_pswd = $_POST['psw'];
 
     include 'connection.php';
-    $sql = "UPDATE `staff` SET `s_firstname`= '$s_firstname',`s_lastname`= '$s_lastname',`s_email`= '$s_email',`s_phno`= $s_phno,`s_department`='$s_department',`s_yearjoined`=$s_yearjoined,`s_pswd`='$s_pswd' WHERE s_id=$s_id";
+    $sql = "UPDATE `staff` SET `s_name`= '$s_firstname',`s_website`= '$s_lastname',`s_email`= '$s_email',`s_phno`= $s_phno,`s_location`='$s_department',`s_yearjoined`=$s_yearjoined,`s_pswd`='$s_pswd' WHERE s_id=$s_id";
     
     $update = mysqli_query($con,$sql);
     if($update)

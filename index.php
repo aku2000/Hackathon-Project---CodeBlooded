@@ -21,7 +21,7 @@
 				<li><a href="#">Login <i class="fas fa-caret-down"></i></a>
 					<ul>
 						<li><a href="adminlogin.php">Admin login</a></li>
-						<li><a href="stafflogin.php">Staff login</a></li>
+						<li><a href="stafflogin.php">University login</a></li>
 						<li><a href="studentlogin.php">Student login</a></li>
 					</ul>
 				</li>
@@ -30,7 +30,7 @@
 		</div>
 	</nav>
 	<div class="header">
-		<h1>CMRIT
+		<h1>SCHOVERSITY
 			<div id="div1">
 				<a href="Tel://918028524456">Tel : +91 80 28524466 / 77</a>
 				<br>

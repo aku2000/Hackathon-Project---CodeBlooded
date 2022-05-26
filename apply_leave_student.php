@@ -12,7 +12,7 @@ $dept = $row['department']
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Leave Application</title>
+	<title>Scholarship Application</title>
 	<link rel="stylesheet" href="apply_leave.css">
 	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 </head>
@@ -30,7 +30,7 @@ $dept = $row['department']
           		<li><a href="#">Login<i class="fas fa-caret-down"></i></a>
             		<ul>
               			<li><a href="adminlogin.php">Admin login</a></li>
-              			<li><a href="stafflogin.php">Staff login</a></li>
+              			<li><a href="stafflogin.php">University login</a></li>
               			<li><a href="studentlogin.php">Student login</a></li>
 					</ul>
           		</li>
@@ -54,7 +54,7 @@ $dept = $row['department']
 		</div>	
 	</div>
 	<div class="wrapper">
-		<div class="title">Leave Application</div><br>
+		<div class="title">Scholarship Application</div><br>
 	  	<form action=" " method="POST">
 			<div class="input_field">
 				<label>First Name</label>
@@ -63,33 +63,54 @@ $dept = $row['department']
 				<input type="text" name="lname" class="input" required="*">
 			</div>
 			<div class="input_field">
-				<label>Country Code</label>
-				<input type="number" name="countrycode" class="input" required="*">
+				<label>Nationality</label>
+				<input type="text" name="countrycode" class="input" required="*">
 				<label>Phone Number</label>
 				<input type="number" name="phno" class="input" required="*">	
 			</div>
+			
 			<div class="input_field">
-				<label>Category</label>
-				<div class="custom_select">
+				<label>Age</label>
+				<input type="number" name="age" class="input" required="*">				
+</div>
+<div class="input_field">
+		    	<label>Course name</label>
+				<input type="text" name="course" class="input" required="*">
+			</div>
+<div class="input_field">
+		    	<label>Specially abled</label>
+				<div class="custom_select" style="margin-left:60px">
 					<select name="category">
-						<option value=" ">Select</option>
-						<option value="Student">Student</option>
-						<option value="Faculty">Faculty</option>
-						<option value="Others">Others</option>
+						<option>Select</option>
+						<option >Yes</option>
+						<option>No</option>
+						
 					</select>
 				</div>
 			</div>
 			<div class="input_field">
-				<label>Starting</label>
-				<input type="date" name="startdate" class="input" required="*">
-		
-				<label>Ending</label>
-				<input type="date" name="enddate" class="input" required="*">
+				<label>Category</label>
+				<div class="custom_select" style="margin-left:60px">
+					<select name="category1">
+						<option>Select</option>
+						<option >Annually</option>
+						<option >Course based</option>
+						
+					</select>
+				</div>
 			</div>
+			
 			<div class="input_field">
-				<label>Reason</label>
-				<textarea class="textarea" name="reason" required="*"></textarea>
+				<label>Entrance score</label>
+				<input type="number" name="score" class="input" required="*">
+		    	<label>Family income</label>
+				<input type="number" name="income" class="input" required="*">
 			</div>
+			
+			<!--<div class="input_field">
+				<label></label>
+				<textarea class="textarea" name="reason" required="*"></textarea>
+			</div>-->
 			<div class="input_field terms">
 				<label class="check">
 					<input type="checkbox" required="*">
@@ -103,27 +124,35 @@ $dept = $row['department']
 	 	</form>   
 	</div>
 	<?php
+
+	
 	include('connection.php');
 	if(isset($_POST['submit']))
 	{
 		$id= $_SESSION['id'];
+		
 		$fname = $_POST['fname'];
 		$lname = $_POST['lname'];
 		$countrycode = $_POST['countrycode'];
 		$phno = $_POST['phno'];
+		$age=$_POST['age'];
+		$course = $_POST['course'];
 		$category = $_POST['category'];
-		$startdate = $_POST['startdate'];
-		$enddate = $_POST['enddate'];
-		$reason = $_POST['reason'];
+		$category1 = $_POST['category1'];
+		$score = $_POST['score'];
+		$income = $_POST['income'];
+	
 
-   		$query = "INSERT INTO `apply_leave_student`(`id`,`first_name`,`last_name`,`department`,`country_code`,`pho`,`category`,`start_date`,`end_date`,`reason`) VALUES('$id','$fname','$lname','$dept','$countrycode','$phno','$category','$startdate','$enddate','$reason')";
+   		$query = "INSERT INTO `apply_scholarship_student`(`id`,`first_name`,`last_name`,`country_code`,`phno`,`age`,`category`,`specially_abled`,`score`,`income`) VALUES('$id','$fname','$lname','$countrycode','$phno','$age','$category','$category1','$score','$income')";
     	$sql = mysqli_query($con,$query);
 
     	if($sql){
     		echo "<h2>Applied successfully</h2>";
+			//echo $age;
     	}
     	else{
     		echo "<h2>Error occurred while applying</h2>";
+			//echo $age;
     	}
 	}
 	?>

@@ -38,9 +38,9 @@ session_start();
 				<li><img src="default.png" alt="Avatar" class="avatar"></li>
 				<li><a href="admin.php"> Welcome <?php echo($_SESSION['usrname']); ?>  <i class="fas fa-caret-down"></i></a>
 					<ul>
-						<li><a href="add_staff.php">Add Staff</a></li>
+						<li><a href="add_staff.php">Add University</a></li>
 						<li><a href="add_student.php">Add Student</a></li>
-						<li><a href="manage_staff.php">Manage Staff</a></li>
+						<li><a href="manage_staff.php">Manage University</a></li>
 						<li><a href="manage_student.php">Manage Student</a></li>
 						<li><a href="logout.php">Logout</a></li>
 					</ul>
@@ -52,13 +52,14 @@ session_start();
 		<div class="title">Register Here!!</div><br>
 	  	<form action=" " method="POST" enctype="multipart/form-data">
 			<div class="field">
-				<label>First Name</label>
+				<label>University Name</label>
 				<input type="text" class="input" id="fname" name="fname" required="*">
 			</div>
 			<div class="field">
-		    	<label>Last Name</label>
+		    	<label>Website</label>
 				<input type="text" class="input" id="lname" name="lname" required="*">
 			</div>
+		
 			<div class="field">
 				<label>Phone Number</label>
 				<input type="number" class="input" id="phno" name="phno" required="*">
@@ -68,11 +69,12 @@ session_start();
 				<input type="text" class="input" id="email" name="email" required="*">
 			</div>
 			<div class="field">
-		    	<label>Department</label>
+		    	<label>Location</label>
 				<input type="text" class="input" id="dept" name="dept" required="*">
 			</div>
+			
 			<div class="field">
-				<label>Year Joined</label>
+				<label>Established Year </label>
 				<input type="year" class="input" id="year" name="year" required="*">	
 			</div>
 			<div class="field">
@@ -80,7 +82,7 @@ session_start();
     			<input type="password" class="input" name="psw" id="psw" required='*'>
 			</div>
 			<div class="field">
-				<label>Set Profile Photo</label>
+				<label>Set University logo</label>
 				<input type="file" id="myFile" name="image" required="*">
 			</div>
 			<div class="field">
@@ -101,7 +103,7 @@ session_start();
 		$psw = $_POST['psw'];
 		$filename = addslashes(file_get_contents($_FILES['image']['tmp_name']));
 
-   		$query = "INSERT INTO `staff`(`s_firstname`,`s_lastname`,`s_phno`,`s_email`,`s_department`,`s_yearjoined`,`s_pswd`,`s_profilephoto`) VALUES('$fname','$lname','$phno','$email','$dept','$year','$psw','$filename')";
+   		$query = "INSERT INTO `staff`(`s_name`,`s_website`,`s_phno`,`s_email`,`s_location`,`s_yearjoined`,`s_pswd`,`s_profilephoto`) VALUES('$fname','$lname','$phno','$email','$dept','$year','$psw','$filename')";
     	$sql = mysqli_query($con,$query);
 
     	if($sql){
