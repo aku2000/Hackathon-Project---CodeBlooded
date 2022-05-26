@@ -55,7 +55,7 @@ $dept = $row['department']
 	</div>
 	<div class="wrapper">
 		<div class="title">Scholarship Application</div><br>
-	  	<form action=" " method="POST">
+	  	<form action="pdf_upload.php" method="POST">
 			<div class="input_field">
 				<label>Scholarship Name</label>
 				<input type="text" name="sname" class="input" required="*">
@@ -75,14 +75,15 @@ $dept = $row['department']
 			</div>
 			
 			<div class="input_field">
-				<label>Age</label>
-				<input type="number" name="age" class="input" required="*">				
-</div>
-<div class="input_field">
-		    	<label>Course name</label>
+				<label >Age</label>
+				<input type="number" name="age" class="input" required="*"  value="<?php echo $age;?>">	
+
+			</div>
+			<div class="input_field">
+				<label>Course name</label>
 				<input type="text" name="course" class="input" required="*">
 			</div>
-<div class="input_field">
+			<div class="input_field">
 		    	<label>Specially abled</label>
 				<div class="custom_select" style="margin-left:60px">
 					<select name="category">
