@@ -75,14 +75,11 @@ $dept = $row['department']
 			</div>
 			
 			<div class="input_field">
-<<<<<<< HEAD
-				<label >Age</label>
-				<input type="number" name="age" class="input" required="*"  value="<?php echo $age;?>">	
+				<!-- <label >Age</label>
+				<input type="number" name="age" class="input" required="*"  value="<?php echo $age;?>">	 -->
 
-=======
 				<label>Age</label>
 				<input type="number" name="age" class="input" required="*">				
->>>>>>> 71d58ef6d37d40b81ad1c85d1c5f2dafa011ee9e
 			</div>
 			<div class="input_field">
 				<label>Course name</label>
