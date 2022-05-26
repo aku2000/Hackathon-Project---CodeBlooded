@@ -62,11 +62,11 @@ $row = mysqli_fetch_assoc($result);
     $sql = "SELECT * FROM `staff` WHERE s_id=$s_id";
     $result = mysqli_query($con,$sql);
     $row = mysqli_fetch_assoc($result);
-    $s_firstname = $row['s_firstname'];
-    $s_lastname = $row['s_lastname'];
+    $s_firstname = $row['s_name'];
+    $s_lastname = $row['s_website'];
     $s_phno = $row['s_phno'];
     $s_email = $row['s_email'];
-    $s_department = $row['s_department'];
+    $s_department = $row['s_location'];
     $s_yearjoined = $row['s_yearjoined'];
 
     ?>

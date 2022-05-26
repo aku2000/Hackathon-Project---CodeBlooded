@@ -77,29 +77,26 @@ $dept = $row['department']
 			<div class="input_field">
 				<label>Age</label>
 				<input type="number" name="age" class="input" required="*">				
-</div>
-<div class="input_field">
-		    	<label>Course name</label>
+			</div>
+			<div class="input_field">
+				<label>Course name</label>
 				<input type="text" name="course" class="input" required="*">
 			</div>
-<div class="input_field">
+			<div class="input_field">
 		    	<label>Specially abled</label>
 				<div class="custom_select" style="margin-left:60px">
 					<select name="category">
-						
 						<option value=" ">Select</option>
 						<option value="Yes">Yes</option>
-						<option value="No">No</option>
-					
-						
+						<option value="No">No</option>	
 					</select>
 				</div>
 			</div>
+           
 			<div class="input_field">
 				<label>Category</label>
 				<div class="custom_select" style="margin-left:60px">
 					<select name="category1">
-					
 						<option value=" ">Select</option>
 						<option value="Annually">Annually</option>
 						<option value="Course based">Course based</option>
