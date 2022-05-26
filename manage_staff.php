@@ -39,7 +39,11 @@ session_start();
         <li><img src="default.png" alt="Avatar" class="avatar"></li>
         <li><a href="admin.php"> Welcome <?php echo($_SESSION['usrname']); ?>  <i class="fas fa-caret-down"></i></a>
           <ul>
+<<<<<<< HEAD
             <li><a href="add_staff.php">Add University</a></li>
+=======
+           <li><a href="add_staff.php">Add University</a></li>
+>>>>>>> da986b1eb383de2023a15e8856147dafbebfff61
 						<li><a href="add_student.php">Add Student</a></li>
 						<li><a href="manage_staff.php">Manage University</a></li>
 						<li><a href="manage_student.php">Manage Student</a></li>

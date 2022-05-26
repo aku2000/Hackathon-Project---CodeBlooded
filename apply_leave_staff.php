@@ -55,19 +55,19 @@ $dept = $row['s_department']
 		</div>	
 	</div>
 	<div class="wrapper">
-		<div class="title">Leave Application</div><br>
+		<div class="title">University Portal</div><br>
 	  	<form action=" " method="POST">
 			<div class="input_field">
-				<label>First Name</label>
+				<label>Scholarship Name</label>
 				<input type="text" name="fname" class="input" required="*">
-		    	<label>Last Name</label>
-				<input type="text" name="lname" class="input" required="*">
+		    	<!-- <label>Last Name</label>
+				<input type="text" name="lname" class="input" required="*"> -->
 			</div>
 			<div class="input_field">
 				<label>Country Code</label>
 				<input type="number" name="countrycode" class="input" required="*">
-				<label>Phone Number</label>
-				<input type="number" name="phno" class="input" required="*">	
+				<!-- <label>Phone Number</label>
+				<input type="number" name="phno" class="input" required="*">	 -->
 			</div>
 			<div class="input_field">
 				<label>Category</label>
@@ -81,14 +81,16 @@ $dept = $row['s_department']
 				</div>
 			</div>
 			<div class="input_field">
-				<label>Starting</label>
+				<label>Application Starting Date</label>
 				<input type="date" name="startdate" class="input" required="*">
 		
-				<label>Ending</label>
+			</div>
+			<div class="input_field">
+				<label>Application Ending Date</label>
 				<input type="date" name="enddate" class="input" required="*">
 			</div>
 			<div class="input_field">
-				<label>Reason</label>
+				<label>Eligibility Criteria</label>
 				<textarea class="textarea" name="reason" required="*"></textarea>
 			</div>
 			<div class="input_field terms">
@@ -105,19 +107,40 @@ $dept = $row['s_department']
 	</div>
 	<?php
 	include('connection.php');
+	// if(isset($_POST['submit']))
+	// {
+	// 	$s_id= $_SESSION['id'];
+	// 	$fname = $_POST['fname'];
+	// 	$lname = $_POST['lname'];
+	// 	$countrycode = $_POST['countrycode'];
+	// 	$phno = $_POST['phno'];
+	// 	$category = $_POST['category'];
+	// 	$startdate = $_POST['startdate'];
+	// 	$enddate = $_POST['enddate'];
+	// 	$reason = $_POST['reason'];
+
+   	// 	$query = "INSERT INTO `apply_leave_staff`(`s_id`,`s_firstname`,`s_lastname`,`s_department`,`s_countrycode`,`s_phno`,`s_category`,`s_startdate`,`s_enddate`,`s_reason`) VALUES('$s_id','$fname','$lname','$dept','$countrycode','$phno','$category','$startdate','$enddate','$reason')";
+    // 	$sql = mysqli_query($con,$query);
+
+    // 	if($sql){
+    // 		echo "<h2>Applied successfully</h2>";
+    // 	}
+    // 	else{
+    // 		echo "<h2>Error occurred while applying</h2>";
+    // 	}
+	// }
+
 	if(isset($_POST['submit']))
 	{
 		$s_id= $_SESSION['id'];
-		$fname = $_POST['fname'];
-		$lname = $_POST['lname'];
-		$countrycode = $_POST['countrycode'];
-		$phno = $_POST['phno'];
+		$scholarship_name = $_POST['fname'];
+		$country_code = $_POST['countrycode'];
 		$category = $_POST['category'];
-		$startdate = $_POST['startdate'];
-		$enddate = $_POST['enddate'];
-		$reason = $_POST['reason'];
+		$app_start_date = $_POST['startdate'];
+		$app_end_date = $_POST['enddate'];
+		$eligibility_criteria = $_POST['reason'];
 
-   		$query = "INSERT INTO `apply_leave_staff`(`s_id`,`s_firstname`,`s_lastname`,`s_department`,`s_countrycode`,`s_phno`,`s_category`,`s_startdate`,`s_enddate`,`s_reason`) VALUES('$s_id','$fname','$lname','$dept','$countrycode','$phno','$category','$startdate','$enddate','$reason')";
+   		$query = "INSERT INTO `scholarship`(`s_id`,`scholarship_name`,`country_code`,`category`,`app_start_date`,`app_end_date`,`eligibility_criteria`) VALUES('$s_id','$scholarship_name','$country_code','$category','$app_start_date','$app_end_date','$eligibility_criteria')";
     	$sql = mysqli_query($con,$query);
 
     	if($sql){

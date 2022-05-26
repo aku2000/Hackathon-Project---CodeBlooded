@@ -58,7 +58,7 @@ $dept = $row['s_department'];
     </div>
     <br>
     <br>
-    <h1 style="text-align: center;">Approve Leave</h1>
+    <h1 style="text-align: center;">Approve Student Scholorship</h1>
   <div class="container">
       <br>       
       <table>
