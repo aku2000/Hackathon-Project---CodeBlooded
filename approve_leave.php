@@ -5,7 +5,7 @@ include 'connection.php';
 $sql = "SELECT * FROM `staff` WHERE s_id=$s_id";
 $result = mysqli_query($con,$sql);
 $row = mysqli_fetch_assoc($result);
-$dept = $row['s_department'];
+//$dept = $row['s_department'];
 ?>
 
 <!DOCTYPE html>
@@ -65,14 +65,19 @@ $dept = $row['s_department'];
         <thead>
           <tr>
             <th>ID</th>
+            <th>Scholarship Name</th>
             <th>First name</th>
             <th>Last name</th>
-            <th>Category</th>
-            <th>Scholarship Type</th>
-            <th>Startdate</th>
-            <th>Endingdate </th>
+            <th>CountryCode</th>
+            <th>Phone no</th>
+            <th>Age</th>
+            <th>Course</th>
+            <th>Category </th>
+            <th>speciallyAbled</th>
+            <th>Score</th>
+            <th>Income</th>
             <th>Approve</th>
-            <th>Reject</th>
+           <!-- <th>Reject</th>-->
           </tr>
         </thead>
         <tbody>

@@ -44,18 +44,18 @@
 
   		<!-- Full-width images with number and caption text -->
   		<div class="mySlides fade">
-    		<img src="image1.png" style="width:100%">
+    		<img src="image 1.png" style="width:100%">
   		</div>
 
   		<div class="mySlides fade">
-  			<img src="image2.png" style="width:100%">
+  			<img src="image 2.png" style="width:100%">
   		</div>
 
   		<div class="mySlides fade">
-    		<img src="image3.png" style="width:100%">
+    		<img src="image 3.png" style="width:100%">
   		</div>
   		<div class="mySlides fade">
-    		<img src="image4.png" style="width:100%">
+    		<img src="image 4.png" style="width:100%">
   		</div>
 
   		<!-- Next and previous buttons -->
