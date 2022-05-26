@@ -30,7 +30,7 @@ $row = mysqli_fetch_assoc($result);
 				<li><a href="#">Login <i class="fas fa-caret-down"></i></a>
 					<ul>
 						<li><a href="adminlogin.php">Admin login</a></li>
-						<li><a href="stafflogin.php">Staff login</a></li>
+						<li><a href="stafflogin.php">University login</a></li>
 						<li><a href="studentlogin.php">Student login</a></li>
 					</ul>
 				</li>
@@ -79,29 +79,25 @@ $row = mysqli_fetch_assoc($result);
 			</div>
 			<div class="main-container">
 			<div class="field">
-				<label><i class="fa fa-user info"></i>First Name</label>
+				<label><i class="fa fa-user info"></i>University Name</label>
 				<input type="text" class="input" id="fname" disabled  value="<?php echo  $s_firstname ;?>"  name="fname" required="*">
 			</div>
 			<div class="field">
-		    	<label><i class="fa fa-user info"></i>Last Name</label>
-				<input type="text" class="input" id="lname" disabled value="<?php echo  $s_lastname ;?>" name="lname" required="*">
-			</div>
-			<div class="field">
-				<label><i class="fa fa-phone info"></i>Mobile</label>
+				<label><i class="fa fa-phone info"></i>Mobile no.</label>
 				<input type="number" class="input" id="phno" disabled  value="<?php echo  $s_phno ;?>" name="phno" required="*">
 			</div>
 			<div class="field">
-		    	<label><i class="fa fa-envelope info"></i>Email</label>
+		    	<label><i class="fa fa-envelope info"></i>Website</label>
 				<input type="text" class="input" id="email" disabled value="<?php echo $s_email ;?>" name="email" required="*">
 			</div>
 			<div class="field">
-		    	<label><i class="fa fa-book info"></i>Department</label>
+		    	<label><i class="fa fa-book info"></i>Location</label>
 				<input type="text" class="input" id="dept" disabled  value="<?php echo $s_department ;?>"  name="dept" required="*">
 			</div>
-			<div class="field">
+			<!-- <div class="field">
 				<label><i class="fa fa-calendar info"></i>Year Joined</label>
 				<input type="year" class="input" id="year" disabled value="<?php echo $s_yearjoined ;?>" name="year" required="*">
-			</div>
+			</div> -->
 			<hr>
 			<a href="staff_reset.php">Change password</a>
 		</div>

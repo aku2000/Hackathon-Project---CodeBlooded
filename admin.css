@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/')
-*{
+@import url('https://fonts.googleapis.com/') */
+/* /* *{
 	margin: 0;
-	padding: 0;
+	padding: 210;
 	list-style: none;
 	text-decoration: none;
-}
+} */
 body {
 	background: #d3d3d3;
 	font-family: arial;
@@ -14,7 +14,7 @@ body {
 nav{
 	position: fixed;
 	left: -250px;
-	width: 250px;
+	width: 500px;
 	height: 100%;
 	/*background: linear-gradient(-135deg, #C850C0, #4158D0);*/
 	/*background: linear-gradient(-45deg,#23A605,#2305AB);*/
@@ -22,7 +22,7 @@ nav{
 	transition: all .5s ease;
 }
 .logo{
-	width: 250px;
+	width: 100px;
 	height: auto;	
 	user-select: none;
 }

@@ -24,7 +24,7 @@ $dept = $row['department']
     </label>
     <nav class="sidebar">
       	<div>
-        	<img class="logo" src="logo.jpeg">
+        	<!-- <img class="logo" src="logo.jpeg"> -->
         	<ul>
           		<li><a href="index.php">Home</a></li>
           		<li><a href="#">Login<i class="fas fa-caret-down"></i></a>

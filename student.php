@@ -30,7 +30,7 @@ $row = mysqli_fetch_assoc($result);
 				<li><a href="#">Login <i class="fas fa-caret-down"></i></a>
 					<ul>
 						<li><a href="adminlogin.php">Admin login</a></li>
-						<li><a href="stafflogin.php">Staff login</a></li>
+						<li><a href="stafflogin.php">University login</a></li>
 						<li><a href="studentlogin.php">Student login</a></li>
 					</ul>
 				</li>
@@ -95,15 +95,15 @@ $row = mysqli_fetch_assoc($result);
 				<input type="text" class="input" id="email" disabled value="<?php echo $email ;?>" name="email" required="*">
 			</div>
 			<div class="field">
-		    	<label><i class="fa fa-book info"></i>Department</label>
+		    	<label><i class="fa fa-book info"></i>Course</label>
 				<input type="text" class="input" id="dept" disabled  value="<?php echo $department ;?>"  name="dept" required="*">
 			</div>
-			<div class="field">
+			<!-- <div class="field">
 		    	<label><i class="fa fa-book info"></i>Sem</label>
 				<input type="number" class="input" id="sem" disabled  value="<?php echo $sem ;?>"  name="sem" required="*">
-			</div>
+			</div> -->
 			<div class="field">
-				<label><i class="fa fa-calendar info"></i>Year Joined</label>
+				<label><i class="fa fa-calendar info"></i>Joining Year</label>
 				<input type="year" class="input" id="year" disabled value="<?php echo $year_joined ;?>" name="year" required="*">
 			</div>
 			<hr>

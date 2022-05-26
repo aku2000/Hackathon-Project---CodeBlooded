@@ -26,13 +26,13 @@ $dept = $row['s_department'];
     </label>
     <nav class="sidebar">
       	<div>
-        	<img class="logo" src="logo.jpeg">
+        	<!-- <img class="logo" src="logo.jpeg"> -->
         	<ul>
           		<li><a href="index.php">Home</a></li>
           		<li><a href="#">Login<i class="fas fa-caret-down"></i></a>
             		<ul>
               			<li><a href="adminlogin.php">Admin login</a></li>
-              			<li><a href="stafflogin.php">Staff login</a></li>
+              			<li><a href="stafflogin.php">University login</a></li>
               			<li><a href="studentlogin.php">Student login</a></li>
 					</ul>
           		</li>
@@ -58,7 +58,7 @@ $dept = $row['s_department'];
     </div>
     <br>
     <br>
-    <h1 style="text-align: center;">Approve Student Scholorship</h1>
+    <h1 style="text-align: center;">Approve Student Scholarship</h1>
   <div class="container">
       <br>       
       <table>
@@ -68,7 +68,7 @@ $dept = $row['s_department'];
             <th>First name</th>
             <th>Last name</th>
             <th>Category</th>
-            <th>Leave type</th>
+            <th>Scholarship Type</th>
             <th>Startdate</th>
             <th>Endingdate </th>
             <th>Approve</th>
